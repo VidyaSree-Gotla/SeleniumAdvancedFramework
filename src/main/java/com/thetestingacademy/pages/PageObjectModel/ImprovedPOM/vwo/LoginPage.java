@@ -1,4 +1,4 @@
-package com.thetestingacademy.pages.PageObjectModel.normal_POM.vwo;
+package com.thetestingacademy.pages.PageObjectModel.ImprovedPOM.vwo;
 
 import com.thetestingacademy.base.CommonToAllPages;
 import org.openqa.selenium.By;

@@ -1,7 +1,6 @@
-package com.thetestingacademy.listener;
+package com.thetestingacademy.listeners;
 import io.qameta.allure.Allure;
 import org.apache.commons.io.FileUtils;
-import org.apache.xmlbeans.impl.xb.xsdschema.All;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;

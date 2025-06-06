@@ -1,4 +1,4 @@
-package com.thetestingacademy.listener;
+package com.thetestingacademy.listeners;
 
 import org.testng.IRetryAnalyzer;
 import org.testng.ITestResult;
