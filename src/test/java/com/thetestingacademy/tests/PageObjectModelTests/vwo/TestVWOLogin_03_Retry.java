@@ -20,6 +20,7 @@ import static com.thetestingacademy.driver.DriverManager.getDriver;
 @Listeners(ScreenshotListener.class)
 @Test(retryAnalyzer = RetryAnalyzer.class)
 public class TestVWOLogin_03_Retry extends CommonToAllTest{
+    private static final Logger logger = LogManager.getLogger(TestVWOLogin_03_Retry.class);
 
     @Owner("PRAMOD")
     @Description("Verify that invalid creds give error message")

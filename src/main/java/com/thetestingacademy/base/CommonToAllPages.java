@@ -1,8 +1,10 @@
 package com.thetestingacademy.base;
 
+import com.thetestingacademy.utils.PropertiesReader;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
+import static com.thetestingacademy.driver.DriverManager.driver;
 import static java.sql.DriverManager.getDriver;
 
 public class CommonToAllPages {
@@ -12,20 +14,20 @@ public class CommonToAllPages {
     }
 
     public void openVWOUrl(){
-        getDriver().get(PropertiesReader.readKey("url"));
+        driver.get(PropertiesReader.readKey("url"));
     }
     public void openOrangeHRMUrl(){
-        getDriver().get(PropertiesReader.readKey("ohr_url"));
+        driver.get(PropertiesReader.readKey("ohr_url"));
     }
 
     public void openKatalonUrl(){
-        getDriver().get(PropertiesReader.readKey("katalon_url"));
+        driver.get(PropertiesReader.readKey("katalon_url"));
     }
 
 
 
     public void clickElement(By by) {
-        getDriver().findElement(by).click();
+        driver.findElement(by).click();
     }
 
     public void clickElement(WebElement by) {
@@ -33,7 +35,7 @@ public class CommonToAllPages {
     }
 
     public void enterInput(By by, String key) {
-        getDriver().findElement(by).sendKeys(key);
+        driver.findElement(by).sendKeys(key);
     }
 
     public void enterInput(WebElement by, String key) {
@@ -41,7 +43,7 @@ public class CommonToAllPages {
     }
 
     public String getText(By by){
-        return getDriver().findElement(by).getText();
+        return driver.findElement(by).getText();
     }
 
     public String getText(WebElement by){

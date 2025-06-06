@@ -1,5 +1,6 @@
 package com.thetestingacademy.pages.PageObjectModel.NormalPOM.vwo;
 
+import com.thetestingacademy.utils.WaitHelpers;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
